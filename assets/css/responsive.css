@@ -1,0 +1,114 @@
+/* PC */
+@media (min-width : 1024px) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width : 1023px) {
+    .buy-tickets-btn {
+        padding: 16px 16px;
+    }
+
+    .contact-content .form-control {
+        padding: 15px 12px;
+    }
+
+    .SEND-btn {
+        padding: 16px 20px;
+    }
+
+    #footer .social-list a {
+        margin: 0px 8px;
+        font-size: 30px;
+    }
+
+    #footer .copyright {
+        font-size: 15px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width : 740px) and (max-width : 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width : 740px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+ 
+    #nav > li {
+        display: block;
+    }
+    
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: inherit;
+        background: #333;
+    }
+
+    #nav .subnav a {
+        padding: 0px 36px;
+        line-height: 46px;
+        color: #fff;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .ti-menu {
+        width: 60px;
+        height: 46px;
+        float: right;
+        color: #fff;
+        padding: 12px 0;
+        text-align: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+    }
+
+    .ti-menu:hover {
+        background: #ccc;
+        color: #000;
+    }
+
+    #content .member-item {
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .place-item {
+        width: 100%;
+       margin-bottom: 16px;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
+
+    .s-mb {
+        margin-bottom: 16px;
+    }
+
+    .contact-info {
+        margin-bottom: 16px;
+    }
+
+    
+
+}

@@ -1,0 +1,347 @@
+
+<!-- Phân biệt gọi tên các thành phần trong website
+1.Header(đầu trang)
+2.Navigation(điều hướng)
+3.Sidebar(thanh bên cạnh) hay còn gọi là phần điều hướng phụ
+4.Breadcrumbs(tập hợp những liên kết giúp người dùng xác định được vị trí của mình trong cấu trúc site)
+5.Content-Slider(nội dung chạy bằng hình ảnh, video)
+6.Content
+7.Banner(Hình ảnh, video quảng cáo)
+8.Footer(chân trang)
+
+1.Phân tích web the Band
+    1.Header (Navigation)
+    2.Content-Slider
+    3.Content
+      . About Band
+      . Tour
+      . Contact
+      . map-image
+    4.Footer
+2.Dựng base(xây móng)
+3.Xây dựng từng phần theo phân tích
+4.Hoàn thiện -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="./assets/img/250px-Treble_a.svg.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <ul id="nav">
+        <li><a href="#content-slider">Home</a></li>
+        <li><a href="#Band">Band</a></li>
+        <li><a href="#Tour">Tour</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li>
+          <a href="#">
+            more
+            <i class="ti-angle-down"></i>
+          </a>
+          <ul class="subnav">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>    
+        </li>
+      </ul>
+
+      <div class="search-button">
+        <i class="search-icon ti-search"></i>
+      </div>
+
+      <div class="ti-menu js-ti-menu">
+        <i class="mobileMenu"></i>
+      </div>
+    </div>
+
+    <div id="content-slider">
+      <div class="text">
+        <h2>New York</h2>
+        <p>The atmosphere in New York is lorem ipsum.</p>
+      </div>
+    </div>
+
+    <div id="content">
+      <!-- About-section -->
+      <div id="Band" class="content-section">
+        <h2 class="section-heading">THE BAND</h2>
+        <p class="section-slogan">We love music</p>
+        <p class="text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <div class="text-align members-list">
+          <div class="member-item col col-third">
+            <p class="member-name">Name1</p>
+            <img src="/assets/img/bandmember.jpg" alt="" class="member-img">
+          </div>
+          <div class="member-item col col-third">
+            <p class="member-name">Name2</p>
+            <img src="/assets/img/bandmember.jpg" alt="" class="member-img">
+          </div>
+          <div class="member-item col col-third">
+            <p class="member-name">Name3</p>
+            <img src="/assets/img/bandmember.jpg" alt="" class="member-img">
+          </div>
+          
+          <div class="clear"></div>
+        </div>  
+      </div>
+
+      <!-- Tour-section -->
+      <div id="Tour" class="Tour-section">
+        <div class="content-section">
+          <h2 class="section-heading text-color">TOUR DATES</h2>
+          <p class="section-slogan text-color">Remember to book your tickets</p>
+          <!-- Ticket-list -->
+          <ul class="tickets-list">
+            <li>September <span class="sold-out">Sold out</span></li>
+            <li>October  <span class="sold-out">Sold out</span></li>
+            <li>November <span class="quantity">3</span></li>
+          </ul>
+          <!-- Places-list -->
+          <div class="row places-list">
+            <div class="place-item col col-third">
+              <img src="./assets/img/newyork (1).jpg" alt="" class="place-img">
+              <div class="place-text">
+                <h3 class="place-name">New York</h3>
+                <p class="place-time">Fri 27 Nov 2016</p>
+                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="buy-tickets-btn js-buy-tickets-btn btn s-col-full">Buy Tickets</button>
+              </div>
+            </div>
+
+            <div class="place-item col col-third">
+              <img src="./assets/img/paris.jpg" alt="" class="place-img">
+              <div class="place-text">
+                <h3 class="place-name">Paris</h3>
+                <p class="place-time">Sat 28 Nov 2016</p>
+                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="buy-tickets-btn js-buy-tickets-btn btn s-col-full">Buy Tickets</button>
+              </div>
+            </div>
+
+            <div class="place-item col col-third">
+              <img src="./assets/img/sanfran.jpg" alt="" class="place-img">
+              <div class="place-text">
+                <h3 class="place-name">San Francisco</h3>
+                <p class="place-time">Sun 29 Nov 2016</p>
+                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="buy-tickets-btn js-buy-tickets-btn btn s-col-full">Buy Tickets</button>
+              </div>
+            </div>
+            
+            <div class="clear"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contact-section -->
+      <div id="Contact" class="content-section">
+        <h2 class="section-heading">CONTACT</h2>
+        <p class="section-slogan">Fan? Drop a note!</p>
+
+        <div class="row contact-content">
+          <div class="col col-half s-col-full mb contact-info">
+            <p><i class="ti-location-pin"></i>Chicago, US</p>
+            <p><i class="ti-headphone"></i>Phone: <a href="tell: +00 151515">+00 151515</a></p>
+            <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+          </div>
+
+          <div class="col col-half s-col-full contact-form">
+           <form action="">
+             <div class="row row1">
+               <div class="col col-half s-col-full">
+                 <input type="text" name="" id="" placeholder="Name" required class="form-control">
+               </div>
+               <div class="col col-half s-col-full">
+                <input type="email" name="" id="" placeholder="Email" required class="form-control">
+              </div>
+             </div>
+             <div class="row row2">
+               <div class="col col-full">
+                 <input type="text" name="" id="" placeholder="Message" required class="form-control">
+               </div>
+             </div>
+            </form>
+            
+            <input type="submit" value="SEND" class="SEND-btn btn s-col-full">
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="map-section">
+        <img src="./assets/img/map.jpg" alt="Map">
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="social-list">
+        <a href=""><i class="ti-facebook"></i></a>
+        <a href=""><i class="ti-instagram"></i></a>
+        <a href=""><i class="ti-youtube"></i></a>
+        <a href=""><i class="ti-twitter-alt"></i></a>
+        <a href=""><i class="ti-google"></i></a>
+        <a href=""><i class="ti-pinterest"></i></a>
+      </div>
+
+      <p class="copyright">Powered by <a href="" class="">w3.css</a></p>
+
+    </div>
+  </div>
+
+  <!-- modal-ticket -->
+  <div class="modal js-modal">
+    <div class="modal-container js-modal-container">
+     
+      <button class="icon-close js-icon-close btn">
+        <i class="ti-close"></i>
+      </button>
+
+      <div class="modal-header">
+        <i class="ti-bag"></i>
+        Tickets
+      </div>
+      
+      <div class="modal-body">
+        <label for="quatity" class="modal-label">
+          <i class="ti-shopping-cart"></i>
+          Tickets, $15 per person
+        </label>
+        <input id="quatity" type="text" class="modal-input" placeholder="How many?">
+        
+        <label for="modal-email" class="modal-label">
+          <i class="ti-user"></i>
+          Send To
+        </label>
+        <input id="modal-email" type="text" class="modal-input" placeholder="Enter email">
+        
+        <button class="pay btn">
+          PAY <i class="ti-check"></i>
+        </button>
+      </div>
+      
+      <div class="modal-footer">
+        <p class="modal-help">Need <a href="" class="help">help?</a></p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+  <script>
+    const buyTicketBtns = document.querySelectorAll('.js-buy-tickets-btn')
+    const modal = document.querySelector('.js-modal')
+    const modalClose = document.querySelector('.js-icon-close')
+    const modalContainer = document.querySelector('.js-modal-container')
+  
+    // Hàm hiển thị modal-container (thêm class open vào modal)
+    function openBuyTicket() {
+      modal.classList.add('open')
+    }
+
+    // Hàm ẩn modal-container (gỡ class open của modal)
+    function closeBuyticket() {
+      modal.classList.remove('open')
+    }
+    
+    // Lặp qua từng thẻ buy-ticket-btn và nghe hành vi click
+    for (const buyTicketBtn of buyTicketBtns) {
+      buyTicketBtn.addEventListener('click', openBuyTicket)
+    }
+
+    // Nghe hành vi click vào button-close
+    modalClose.addEventListener('click', closeBuyticket)
+  
+    // Nghe hành vi click vào modal
+    modal.addEventListener('click', closeBuyticket)
+
+    // Dừng hành vi click vào modal-container
+    modalContainer.addEventListener('click', function(event) {
+      event.stopPropagation()
+    })
+  </script>
+
+  <!-- <script>
+    const menuBtn = document.querySelector('.js-ti-menu')
+    const header = document.querySelector('#header')
+    const menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+
+    // Hàm hiển thị menu (thêm class open-menu vào header)
+    function openMenu() {
+      header.classList.add('open-menu')
+    }
+
+    // Hàm ẩn menu (gỡ class open-menu của header)
+    function closeMenu() {
+      header.classList.remove('open-menu')
+    }
+
+    // Lặp qua từng thẻ menuItems và nghe hành vi click
+    for (const menuItem of menuItems) {
+      menuItem.addEventListener('click', closeMenu)
+    }
+
+    // Nghe hành vi click vào menuBtn
+    menuBtn.addEventListener('click', openMenu)
+  </script> -->
+
+  <script>
+    var header = document.getElementById('header');
+    var menuBtn = document.querySelector('.js-ti-menu');
+    var headerHeight = header.clientHeight;
+    
+    // Đóng/mở menu-btn
+    menuBtn.onclick = function() {
+      var isClosed = header.clientHeight === 46;
+      if (isClosed) {
+        header.style.height = 'auto'
+      } else {
+        header.style.height = null
+      } 
+    }
+
+    // Tự động đóng khi chọn menu-item
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    for (i = 0; i < menuItems.length; i++) {
+      var menuItem = menuItems[i];
+
+      menuItem.onclick = function() {
+        header.style.height = null
+      }
+    }
+  
+    // Bấm vào thẻ more ko bị ẩn menu-items 
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+    for (i = 0; i < menuItems.length; i++) {
+      var menuItem = menuItems[i];
+
+      menuItem.onclick = function (event) {
+        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+        if (isParentMenu) {
+          event.preventDefault();
+        } else {
+          header.style.height = null
+        }
+      }
+    }
+  </script>
+
+ 
+  <script>
+
+  </script>
+
+</html>
